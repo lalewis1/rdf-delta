@@ -95,9 +95,29 @@
       <artifactId>jena-fuseki-main</artifactId>
     </dependency>
 
+    <!-- Explicit version bump To patch CVE (subdep of jena-fuseki-main) -->
+    <dependency>
+      <groupId>org.apache.shiro</groupId>
+      <artifactId>shiro-core</artifactId>
+      <version>2.0.5</version>
+    </dependency>
+
+    <!-- Explicit version bump To patch CVE (subdep of jena-fuseki-main) -->
+    <dependency>
+        <groupId>org.apache.commons</groupId>
+        <artifactId>commons-fileupload2-core</artifactId>
+        <version>2.0.0-M4</version>
+    </dependency>
+
     <dependency>
       <groupId>org.apache.curator</groupId>
       <artifactId>curator-test</artifactId>
+    </dependency>
+    <!-- Explicit version bump To patch CVE (subdep of curator-test) -->
+    <dependency>
+        <groupId>io.netty</groupId>
+        <artifactId>netty-handler</artifactId>
+        <version>4.2.2.Final</version>
     </dependency>
 
     <dependency>
